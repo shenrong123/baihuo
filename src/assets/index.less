@@ -1,0 +1,135 @@
+// @import '~iview/src/styles/index.less';
+
+// 主颜色
+@primary-color: #32cd9c;
+
+// @layout-header-height : 50px;
+@layout-header-padding : 0;
+
+@block-margin: 15px; // 块元素默认margin
+@inline-margin: 8px; // 行内元素默认margin
+
+/* 列表页公共类样式 BEGIN */
+.list-page-container {
+}
+/* 标题容器 */
+.list-page-container .title-box {
+  margin-top: @block-margin;
+  margin-bottom: @block-margin;
+}
+/* 标题容器 - 标题 */
+.list-page-container .title-box h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: @block-margin;
+}
+/* 标题容器 - 操作按钮组 */
+.list-page-container .title-box .actions {
+  float: right;
+}
+/* 标题容器 - 操作按钮组 - 操作按钮 */
+.list-page-container .title-box .actions a + a,
+.list-page-container .title-box .actions a + button,
+.list-page-container .title-box .actions button + button {
+  margin-left: @inline-margin;
+}
+/* 搜索框容器 */
+.list-page-container .search-box {
+  margin-bottom: @block-margin;
+}
+.list-page-container .search-box .ivu-select {
+  width: 200px;
+  margin-right: @inline-margin;
+}
+.list-page-container .search-box .ivu-input-wrapper {
+  width: 300px;
+  margin-right: @inline-margin;
+}
+/* 分页组件 */
+.list-page-container > .ivu-page {
+  margin-top: @block-margin;
+  float: right;
+}
+/* 列表页公共类样式 END */
+
+/* 详情页公共类样式 BEGIN */
+.detail-page-container {
+  position: relative;
+}
+.detail-page-container .sub-title-box {
+  padding: @block-margin 0;
+}
+.detail-page-container .sub-title-box h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: @block-margin;
+}
+.detail-page-container .sub-title-box .actions {
+  float: right;
+}
+/* 标题容器 - 操作按钮组 - 操作按钮 */
+.detail-page-container .sub-title-box .actions a + a,
+.detail-page-container .sub-title-box .actions a + button,
+.detail-page-container .sub-title-box .actions button + a,
+.detail-page-container .sub-title-box .actions button + button {
+  margin-left: @inline-margin;
+}
+/* 详情页公共类样式 END */
+.text-success {
+  color: @primary-color;
+}
+.text-center {
+  text-align: center;
+}
+.text-danger {
+  color: #F00;
+}
+.text-left {
+  text-align: left;
+}
+.inline-mr {
+  margin-right: @inline-margin
+}
+.m-r-xxxl {
+  margin-right: 150px;
+}
+.m-b {
+  margin-bottom: @inline-margin
+}
+.m-b-md {
+  margin-bottom: 15px;
+}
+.m-b-lg {
+  margin-bottom: 25px;
+}
+.m-b-xl {
+  margin-bottom: 50px;
+}
+.padding-v {
+  padding: 15px 0;
+}
+.text-md {
+  font-size: 14px;
+}
+.text-lg {
+  font-size: 16px;
+}
+.text-xlg {
+  font-size: 18px;
+}
+.text-color-dark {
+  color: #333;
+}
+.text-warning {
+  color: #ff9900;
+}
+.text-right {
+  text-align: right;
+}
+.text-disabled {
+  color: #ccc;
+}
+// tootip的换行强制换行
+.ivu-tooltip-inner {
+  word-break: break-all !important;
+}
